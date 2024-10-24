@@ -3,7 +3,7 @@ const searchBox = document.getElementById("searchBox")
 const searchResult = document.getElementById("searchResult")
 const showMore = document.getElementById("showMore")
 
-accessKey = "ybj_Aqqecwt38IIz7PyS8_vgksEQccKrtN5He-HKMgk";
+accessKey = ""; //Your Unsplash API Key 
 let keyword = "";
 let page = 1;
 
