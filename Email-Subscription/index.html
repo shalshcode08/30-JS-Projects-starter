@@ -22,7 +22,6 @@
     </div>
 
     <script>
-  
       const form = document.forms["submit-to-google-sheet"];
 
       let msg = document.getElementById("msg");
@@ -31,9 +30,9 @@
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            msg.innerHTML = "Thanks for subscribing!"
+            msg.innerHTML = "Thanks for subscribing!";
             setTimeout(() => {
-                msg.innerHTML = "";
+              msg.innerHTML = "";
             }, 5000);
             form.reset();
           })
